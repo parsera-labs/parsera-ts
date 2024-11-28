@@ -1,0 +1,35 @@
+# Source files
+src/
+
+# Tests
+**/*.test.ts
+**/*.spec.ts
+vitest.config.ts
+coverage/
+
+# Development configs
+.eslintrc
+.prettierrc
+tsconfig.json
+.editorconfig
+.vscode/
+.idea/
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db 
