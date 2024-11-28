@@ -102,7 +102,7 @@ Configure global or per-request proxy locations:
 // Global proxy configuration
 const parsera = new Parsera({
     apiKey: 'your-api-key',
-    defaultProxyCountry: 'US'
+    defaultProxyCountry: 'UnitedStates'
 });
 
 // Per-request proxy override
@@ -111,7 +111,7 @@ const data = await parsera.extract({
     attributes: {
         price: 'Get the local price'
     },
-    proxyCountry: 'GB' // Override for this request only
+    proxyCountry: 'random' // Override for this request only
 });
 ```
 
