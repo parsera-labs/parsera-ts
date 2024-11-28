@@ -17,8 +17,9 @@
     "test": "vitest",
     "prepublishOnly": "npm run build",
     "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --write \"src/**/*.ts\"",
-    "prepare": "husky"
+    "prepare": "husky install"
   },
   "keywords": [
     "parsera",
@@ -51,5 +52,11 @@
   ],
   "engines": {
     "node": ">=14.0.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
