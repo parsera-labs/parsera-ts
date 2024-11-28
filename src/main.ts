@@ -1,4 +1,4 @@
-export { Parsera } from "./services/parsera.js";
+export { Parsera } from './services/parsera.js';
 export type {
   ParseraOptions,
   ParseraRetryOptions,
@@ -8,11 +8,11 @@ export type {
   ParseraEventType,
   ParseraEvent,
   ParseraEventHandler,
-  ParseraEventOptions,
-} from "./services/parsera.js";
+  ParseraEventOptions
+} from './services/parsera.js';
 export type {
   BaseInput,
   ParseraResponse,
   ParseraError,
-  ParseraRequestBody,
-} from "./types/parsera.js";
+  ParseraRequestBody
+} from './types/parsera.js';

@@ -1,6 +1,6 @@
-import { z } from "zod";
-import { BaseInput } from "../types/parsera.js";
-import { createInputSchema } from "../schemas/input.js";
+import { z } from 'zod';
+import { BaseInput } from '../types/parsera.js';
+import { createInputSchema } from '../schemas/input.js';
 
 /**
  * Validates the input configuration using Zod
@@ -15,8 +15,8 @@ export const validateInput = async (input: unknown): Promise<BaseInput> => {
   } catch (error) {
     if (error instanceof z.ZodError) {
       const errorMessages = error.errors
-        .map((err) => `${err.path.join(".")}: ${err.message}`)
-        .join("\n");
+        .map((err) => `${err.path.join('.')}: ${err.message}`)
+        .join('\n');
       throw new Error(`Input validation failed:\n${errorMessages}`);
     }
     throw error;
