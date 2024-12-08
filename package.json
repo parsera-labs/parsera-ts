@@ -1,5 +1,5 @@
 {
-  "name": "parsera-sdk",
+  "name": "parsera-ts",
   "version": "1.0.0",
   "description": "Official TypeScript SDK for Parsera.org API - Extract structured data from any webpage",
   "type": "module",
@@ -46,6 +46,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^15.2.10",
     "prettier": "^3.1.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
     "vitest": "^1.0.4"
   },

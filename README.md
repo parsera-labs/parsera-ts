@@ -5,7 +5,7 @@ Official TypeScript SDK for Parsera API - Extract structured data from any webpa
 ## Installation
 
 ```bash
-npm install parsera-sdk
+npm install parsera-ts
 ```
 
 1. Visit [parsera.org](https://parsera.org) to get your API key with 20 free credits
@@ -14,7 +14,7 @@ npm install parsera-sdk
 ## Basic Usage
 
 ```typescript
-import { Parsera } from 'parsera-sdk';
+import { Parsera } from 'parsera-ts';
 
 // Initialize the client
 const parsera = new Parsera({
