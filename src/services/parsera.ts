@@ -105,7 +105,7 @@ export interface ExtractOptions {
   /**
    * Country code for proxy server location
    * Overrides the defaultProxyCountry setting
-   * @example "US" | "GB" | "DE" | "JP"
+   * @example "UnitedStates" | "UnitedKingdom" | "Germany" | "Japan"
    */
   proxyCountry?: string;
 
@@ -198,7 +198,7 @@ export class Parsera {
   constructor({
     apiKey,
     baseUrl = 'https://api.parsera.org/v1',
-    defaultProxyCountry = 'US',
+    defaultProxyCountry = 'UnitedStates',
     timeout = 30000,
     retryOptions = {}
   }: ParseraOptions) {
